@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 5px;
+    width: 50vw;
+}
+
+h1 { font-size: 70px; }
+
+h2 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+article {
+   width: 100%;
+   margin-bottom: 50px; 
+}
+
+.slideRules {
+    background: darkred;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+#rules {
+    background: lightskyblue;
+    font-size: 25px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.taskProgress, .timeProgress {
+    position: fixed;
+    top: 65vh;
+    left: 4vw;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.taskProgress p, .timeProgress p {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.timeProgress { top: 5vh; }
+
+#start {
+    width: 250px;
+    font-size: 40px;
+    background: navy;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    padding: 20px 0;
+    margin: 20px 0;
+}
+
+#gameBoard {
+    display: none;
+    width: 100%;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 100px);
+    margin-top: 20px;
+}
+
+#win {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+#win a {
+    padding: 10px 20px;
+    font-size: 40px;
+    background: lightgreen;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    margin-top: 20px;
+}
+
+.front, .back {
+    background: steelblue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    backface-visibility: hidden;
+}
+
+.back {
+    background: white;
+    transform: rotateY(180deg);
+}
+
+.back img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+}
+
+.flip { transform: rotateY(180deg); }
+.card { transform-style: preserve-3d; } 
+
+#gameBoard > div {
+    text-align: center;
+    line-height: 100px;
+    cursor: pointer;
+    transition: all 0.5s;
+}

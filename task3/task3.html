@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../knob/jquery.knob.min.js"></script>
+    <link rel="stylesheet" href="../alertify/alertify.core.css">
+    <link rel="stylesheet" href="../alertify/alertify.default.css">
+    <script src="../alertify/alertify.min.js"></script>
+    <link rel="stylesheet" href="task3.css">
+    <script src="task3.js" defer></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1><i><u>Online-Quest</u></i></h1>
+        <h2>Task 3. Memory game</h2>
+        <article>
+            <p class="slideRules">Description & Rules &#9660; </p>
+            <div id="rules">
+                <p>
+                <ul style="list-style: none;">
+                    <li><b>Memory</b> - is a game in with you should memorised 
+                        images and match them.</li>
+                    <br>
+                    <li>
+                        <b>Rules:</b>
+                        <ul style="margin-left: 40px;">
+                            <li>If you click on the board item it will reveal the image under it</li>
+                            <li>If you click on second item and it image isn't match both will hide</li>
+                            <li>If you match two images they will stay revealed</li>
+                            <li>After revealing all board, you will finish the quest</li>
+                            <li>You will have only 5 minutes to solve this task after pressing the Start button</li>
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+            </div>
+        </article>
+        
+        <div class="timeProgress">
+            <p>Time progress</p>
+            <input value="0" class="time">
+        </div>
+
+        <div class="taskProgress">
+            <p>Task progress</p>
+            <input value="0" class="progress">
+        </div>
+
+        <div id="start">
+            <p>Start</p>
+        </div>
+
+        <div id="gameBoard"></div>
+
+        <div id="win">
+            <h1>You win</h1>
+            <a href="../index.html">Go back to main menu</a>
+        </div>
+    </div>
+</body>
+
+</html>

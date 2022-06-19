@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 20px 5px;
+    width: 50vw;
+}
+
+h1 { font-size: 70px; }
+
+h2 {
+    font-size: 50px;
+    margin: 20px 0;
+}
+
+article {
+   width: 100%;
+   margin-bottom: 50px; 
+}
+
+.slideRules {
+    background: darkred;
+    color: white;
+    font-size: 30px;
+    padding: 10px 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+#rules {
+    background: lightskyblue;
+    font-size: 25px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.taskProgress {
+    position: fixed;
+    top: 35vh;
+    left: 4vw;
+    padding: 10px;
+    width: 400px;
+    height: 400px;
+}
+
+.taskProgress p {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.img { width: 60%; }
+
+img {
+    width: 100%;
+    box-shadow: 0 0 20px black;
+}
+
+.answer {
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+#text {
+    font-size: 35px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#text:focus { outline: none; }
+
+#btnTask {
+    font-size: 30px;
+    background: darkred;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+#btnNext {
+    position: fixed;
+    right: 2vw;
+    top: 45vh;
+    width: 200px;
+    height: 50px;
+    font-size: 35px;
+    background: darkred;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    display: none;
+}
